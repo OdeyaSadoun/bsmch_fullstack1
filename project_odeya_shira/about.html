@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
+    <script>
+        function onClickReadMore() {
+            let txt = document.getElementById('text_read_more');
+            let tmp = txt.hidden;
+            txt.hidden = !tmp;
+            let p1=document.getElementById('p1');
+            if (p1.innerText == 'READ MORE >>')
+                p1.innerText = "<< READ LESS";
+            else p1.innerText = "READ MORE >>";
+        }
+    </script>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        
+        </nav>
+        <div class="logo">
+            <img src="images/logo-removebg.png" alt="logo">
+
+        </div>
+    </header>
+    <main class="container-fluid center">
+
+        <h1>ABOUT OUR ICE CREAM</h1>
+        <img class="about_img" src="images/p3.jpg">
+        <h2>
+            <strong>Ice cream is </strong>a frozen and foamed food, usually sweet, based on a solid emulsion
+            mixture of water
+            consisting of ice crystals, air, sweeteners, fat and other non-fat solids
+
+        </h2>
+        <h3>Many colors and flavors. Courteous and professional service. Because your taste is important to us...
+        </h3>
+        <h2>
+            <strong>in the world,</strong> many forms of ice cream made of different ingredients.
+            The Italian cream ice cream called "gelato" is considered the standard
+            and famous ice cream in the world.
+
+        </h2>
+
+    </main>
+    <div class="button_read center">
+        <button class="button1 button" onclick="onClickReadMore()"><p id="p1">READ MORE >></p></button>
+        <div class="read_more center" hidden id="text_read_more">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab aliquam eligendi eius labore voluptate adipisci
+            alias quod, incidunt rem atque ipsa tenetur repellendus molestiae quam officiis tempora, sapiente sed
+            corrupti velit explicabo ex mollitia iste! Suscipit consequuntur natus quo debitis nesciunt dolorum
+            accusantium porro ipsam velit eius ut nemo nisi, error reprehenderit magni dolorem provident quam rerum,
+            sunt voluptatum quas magnam? Molestias repellendus asperiores atque autem nemo qui vero voluptas? Quia non
+            molestias inventore, soluta quod voluptatum eveniet numquam quae, eius cum consequatur dolore velit
+            explicabo rerum adipisci necessitatibus! Asperiores laboriosam labore, facere a voluptas sequi quasi,
+            laborum fuga voluptatem odio veritatis quidem rerum cum rem! Dignissimos quaerat officiis dolorum ipsum
+            nesciunt dolor commodi accusantium quisquam velit, reiciendis delectus quos similique ea, veniam nam
+        </div>
+
+        <a href="https://he.wikipedia.org/wiki/%D7%92%D7%9C%D7%99%D7%93%D7%94" class="button2 button" target="_blank">READ MORE IN GOOGLE>></a>
+
+    </div>
+    <footer class="container-fluid ">
+        <div class="container center">
+
+            © project | Odeya Sadoun | Shira Aviram | 2023 | FULL STACK
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>
